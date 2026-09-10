@@ -64,4 +64,26 @@ data[2] = -3;  // меняем элемент 3 на -3
 
 Его использование в программе дополнительно подчёркивает, что мы имеем дело с индексами или с размером.
 
+```
+void example()
+{
+	std::vector<int> data(5);
+	cout << "Enter numbers:";
+
+	// Заполнение вектора
+	for (size_t i = 0; i != data.size(); i++)
+	{
+		std::cin >> data[i];
+
+	}
+
+	//Вывод
+	for (size_t i = 0; i != data.size();i++)
+	{
+		cout << data[i];
+		cout << ' ';
+	}
+}
+
+```
 
